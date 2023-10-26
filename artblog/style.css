@@ -1,0 +1,17 @@
+body {
+    border: 10px solid black;
+    
+}
+
+nav{
+    background: rgb(129, 20, 20);
+    color:gold;
+    width: fit-content;
+    padding: 5px;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+
+}
