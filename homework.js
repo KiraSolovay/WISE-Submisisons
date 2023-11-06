@@ -37,19 +37,25 @@ class Person {
     greet() {
         console.log(`${this.name} says hi!`)
     }
-    eat() {
-        this.weight++;
-        this.mood++;
+    eat(num) {
+        for (let i = 0; i < num; i++) {
+            this.weight++;
+            this.mood++;
+        }
     }
-    exercise() {
-        this.weight--;
+    exercise(num) {
+        for (let i = 0; i < num; i++) {
+            this.weight--;
+        }
     }
-    ageUp() {
-        this.age++;
-        this.height++;
-        this.weight++;
-        this.mood--;
-        this.bankAccount += 10;
+    ageUp(num) {
+        for (let i = 0; i < num; i++) {
+            this.age++;
+            this.height++;
+            this.weight++;
+            this.mood--;
+            this.bankAccount += 10;
+        }
     }
     buyHamster(hamster) {
         this.hamsters.push(hamster);
@@ -57,3 +63,36 @@ class Person {
         this.bankAccount -= hamster.price;
     }
 }
+
+// instantiate a new Person named Timmy
+const Timmy = new Person("Timmy");
+
+// age Timmy five years
+Timmy.ageUp(5);
+
+// have Timmy eat five times
+Timmy.eat(5);
+
+// have Timmy exercise five times
+Timmy.exercise(5);
+
+// age Timmy nine years
+Timmy.ageUp(9);
+
+// create a Hamster named Gus
+const Gus = new Hamster("Gus");
+
+// set Gus' owner to "Timmy"
+Gus.owner = "Timmy";
+
+// Timmy buys Gus
+Timmy.buyHamster(Gus);
+
+// age Timmy 15 years
+Timmy.ageUp(15);
+
+// Timmy eats 2 times
+Timmy.eat(2);
+
+// Timmy exercises twice
+Timmy.exercise(2);
