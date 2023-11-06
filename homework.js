@@ -1,3 +1,4 @@
+// HAMSTER
 class Hamster {
     constructor (name){
         this.owner = "";
@@ -15,6 +16,7 @@ class Hamster {
     }
 }
 
+// PERSON
 class Person {
     constructor (name){
         this.name = name;
@@ -64,6 +66,7 @@ class Person {
     }
 }
 
+// CREATE A STORY WITH YOUR PERSON CLASS
 // instantiate a new Person named Timmy
 const Timmy = new Person("Timmy");
 
@@ -96,3 +99,26 @@ Timmy.eat(2);
 
 // Timmy exercises twice
 Timmy.exercise(2);
+
+// CHEF MAKE DINNERS
+class Dinner{
+    constructor(appetizer, entree, dessert) {
+        this.appteizer = appetizer;
+        this.entree = entree;
+        this.dessert = dessert;
+    }
+}
+
+class Chef{
+    static makeDinner(appetizer, entree, dessert){
+        return new Dinner(appetizer, entree, dessert);
+    }
+}
+
+const dinner1 = Chef.makeDinner('Salad', 'Steak', 'Cake');
+const dinner2 = Chef.makeDinner('Soup', 'Pasta', 'Ice Cream');
+const dinner3 = Chef.makeDinner('Bruschetta', 'Grilled Salmon', 'Tiramisu');
+
+console.log('Dinner 1:', dinner1);
+console.log('Dinner 2:', dinner2);
+console.log('Dinner 3:', dinner3);
