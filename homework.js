@@ -100,6 +100,8 @@ Timmy.eat(2);
 // Timmy exercises twice
 Timmy.exercise(2);
 
+console.log(Timmy);
+
 // CHEF MAKE DINNERS
 class Dinner{
     constructor(appetizer, entree, dessert) {
