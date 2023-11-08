@@ -45,3 +45,28 @@ for (let tmnt of tmnts){
     tmnt = tmnt.toUpperCase();
     console.log(tmnt);
 }
+
+// Methods, Revisited
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// console log titanic
+console.log(favMovies[8]);
+// sort (alphabetically)
+favMovies.sort();
+// pop it
+favMovies.pop();
+// push GOTG
+favMovies.push('Guardians of the Galaxy');
+// reverse the array
+favMovies.reverse();
+// shift (remove from beginning of array)
+favMovies.shift();
+// unshift (add to beginning of the array)
+favMovies.unshift('The Two Towers');
+// splice Django Unchained and add Avatar
+favMovies.splice(favMovies.indexOf('Django Unchained'), 0, "Avatar");
+// slice the last half of the array. returns a copy, doesnt alter array
+const someMovies = favMovies.slice((favMovies.length)/2);
+// console log final results
+console.log(favMovies, someMovies);
+// console log index of Fast and Furious
+console.log(favMovies.indexOf('Fast and Furious'));
