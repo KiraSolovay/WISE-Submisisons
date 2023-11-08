@@ -38,3 +38,10 @@ wolfy[3] = "Gotham City";
 dart.push("Hawkins");
 // rename Wolfy
 wolfy[0] = "Gameboy";
+
+// Yell at the Ninja Turtles
+const tmnts = ["Donatello", "Leonardo", "Raphael", "Michaelanagelo"];
+for (let tmnt of tmnts){
+    tmnt = tmnt.toUpperCase();
+    console.log(tmnt);
+}
