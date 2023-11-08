@@ -70,3 +70,14 @@ const someMovies = favMovies.slice((favMovies.length)/2);
 console.log(favMovies, someMovies);
 // console log index of Fast and Furious
 console.log(favMovies.indexOf('Fast and Furious'));
+
+// Where's Waldo
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+// remove eggbert using splice
+whereIsWaldo.splice(whereIsWaldo.indexOf('Eggbert'), 1);
+// change Neff to No One
+whereIsWaldo[2][2] = "No One";
+// access and console.log Waldo
+console.log(whereIsWaldo[2][1][1]);
