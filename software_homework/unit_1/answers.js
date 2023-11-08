@@ -24,3 +24,17 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 
+// wild wild life
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+const sharky = ["Sharky", "shark", 20, "Left Coast"]
+const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+// plantee's birthday
+plantee[2] += 1;
+// wolfy's hometown
+wolfy[3] = "Gotham City";
+// D'Art's second hometown
+dart.push("Hawkins");
+// rename Wolfy
+wolfy[0] = "Gameboy";
